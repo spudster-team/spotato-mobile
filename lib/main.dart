@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:spotato/constants.dart';
+import 'package:spotato/pages/login_page.dart';
 
 import 'pages/onbroading_page.dart';
 
@@ -15,7 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Spotato',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
+        primaryColor: Palette.primaryColor,
+        fontFamily: 'Montserrat',
       ),
       home: const OnbroadingPage(),
     );
